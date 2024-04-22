@@ -42,7 +42,9 @@ We split the data into two sets: a training dataset and a test dataset which we 
 
 We notice that the target variable (price), has a long tail even after removing some outliers, so we will use logarithm of the sale price to get an approximately normal distribution, which is better suited numerically for model building. This is done by using a TransformedTargetRegressor in the modeling.
 #### Ridge Model with Grid Search
-After encoding categorical features with a OneHotEncoder, we build a Ridge estimator model with grid search to find the best alpha (Ridge model hyperparameter).
+After encoding categorical features with a OneHotEncoder, we build a Ridge estimator model with grid search to find the best alpha (Ridge model hyperparameter). Below is a diagram of the modeling pipeline: <br/>
+![ModelPipeline](https://github.com/Vamana/Car-Values-Analysis/assets/7783577/044e6f04-04cf-4093-9421-49237c1eeb75)<br/>
+
 After training the data on the model, we find that the best estimator performs as well on the training data as on the test data (the mean squared error is very similar on both datasets).
 The predicted values vs test data values (for price) are shown below:
 ![TestVsPredictedPrice](https://github.com/Vamana/Car-Values-Analysis/assets/7783577/feeedd58-b0e5-4205-baf4-422501146b18) <br/>
