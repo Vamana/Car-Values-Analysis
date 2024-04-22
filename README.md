@@ -17,14 +17,14 @@ Before any analysis and model building can be done, we first clean up the data, 
 We drop features that are not useful characterestics for modeling. We also drop regional data since we want to do a nation-wide analysis and pinpoint those features that are applicable to all regions.
 The features we drop at this stage are id', 'VIN', 'region', and 'state'.
 #### Outliers
-We remove outliers (data with unusually high or unsusually values). We removed data with very high or very low mileage, and very high or very low sale price.
+We remove outliers (data with unusually high or unsusually low values). We removed data with very high or very low mileage, and very high or very low sale price.
 
 ### Data Cleanup Stage 2: Missing Data.
 Fill in missing data. The strategy used to fill in missing values will depend on the feature being addressed.
 #### Proportional Imputer
 For columns 'condition', 'cylinders', 'drive', and 'size', at least <b>30% of the values are missing. </b> it will be misleading to impute a default value or even a mean value for missing values; this will skew the data during cleanup! <br> 
 We will fill in missing values using a novel <b> Proportional Imputer function </b>: the value to be filled will be drawn from the existing values *with a probability equal to the occurrence of the values*.<br> 
-For example, if we have values \['A', 'B' 'C'\] occurring with probabilities \[0.25, 0.3, 0.45\] then the filled value will be 'A' 25% of the time, 'B' 30% of the time and 'C' 45% of the time.
+For example, if we have values \['A', 'B' 'C'\] occurring with probabilities \[0.25, 0.3, 0.45\] then a filled value will be 'A' 25% of the time, 'B' 30% of the time and 'C' 45% of the time.
 
 For other features that only have a few missing values, we use a SimpleImputer that will fill in missing values with the median value or an attribute like 'other'.
 
