@@ -63,7 +63,7 @@ These are the features that contribute most to increased sale value of a vehicle
 - <b> Condition </b> (New, excellent, good). Buyers are willing to pay a premium for a vehicle in good to excellent condition.
 - <b> Model Year.</b> The later the model year, the more buyers are willing to pay for the vehicle.
 - <b> Certain Vehicle Types </b> (pickup trucks!) Customers value pickup trucks more than any other vehicle type.
-- Interestingly, <b>number of cylinders</b> (which influences how powerful the vehicle is) is <b>*not*</b> considered to be very important at all from our analysis. 
+- Interestingly, <b>number of cylinders</b> (which influences how powerful the vehicle is) is <b>*not*</b> considered to be very important at all from our analysis. <br/>
 Below is a bar plot  of the influence of the most desirable features on car price.
 ![DesirableFeatures](https://github.com/Vamana/Car-Values-Analysis/assets/7783577/388438b8-a650-4612-a999-c94bf00575ed) <br/>
 
@@ -73,9 +73,15 @@ These are the features that contribute most to the <b>*decrease*</b> in sale val
 - <b> Odometer (mileage) </b> The higher the mileage of the vehicle, the less buyers are willing to pay. We note that there is only a mild negative correlation between model year and odometer, so the undesirability of high mileage goes beyond correlation with model year.
 - <b> Condition </b> (salvage, fair). We note that even fair condition is not acceptable to buyers, perhaps because of 'condition padding' by sellers.
 - <b> Certain Vehicle Types </b> (hatchbacks, minivans, sedans, station wagons). It is interesting to note that buys are not willing to pay a premium for sedans.
-- <b> SUVs <b/> While SUVs are the highest-selling *new* cars, we note that they are neither strongly desirable or undesirable in the *used* car market. 
+- <b> SUVs </b> While SUVs are the highest-selling *new* cars, we note that they are neither strongly desirable or undesirable in the *used* car market. <br/>
 Below is a bar plot  of the influence of the most undesirable features on car price.
 ![UndesirableFeatures](https://github.com/Vamana/Car-Values-Analysis/assets/7783577/20ba7167-d0b1-48de-9783-372e49ec9196) <br/>
+
+### Next Steps
+Now that we have a good understanding of the important features that drive used car price, we consider some further steps to sharpen our analysis. <br/>
+- It will be useful to see if the inclusion of some of the dropped features, notably manufacturer, has an effect on sales price.
+- A separate analysis for each state or region might reveal regional differences in customer preference.
+- It will be interesting to include some nonlinearity, especially in year and odometer, in our regression model to see if we get a tighter predictive model.
 
 
 
