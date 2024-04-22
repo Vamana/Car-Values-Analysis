@@ -1,6 +1,6 @@
 # Car Values Analysis
  We present an analysis of a used car sale price dataset, applying the CRISP-DM framework to determine what drives pricing. 
-This repository also contains a Jupyter notebook,  along with associated data and images, which was used to analyze the data.
+This repository also contains a <a href="https://github.com/Vamana/Car-Values-Analysis/blob/main/ASubbaraman-CarValues.ipynb">Jupyter notebook</a> along with associated data and images, which was used to analyze the data.
 
 ### Business Understanding
 We would like to understand what features of a used car drives prices. From the dataset containing several characterestics of cars, the goal is to identify the most important features that determine car value. We will do this by first building a Machine Learning model and training it on the data. After cross-validating the model, we will extract the features that are most dominant in accurately predicting car prices.
@@ -53,7 +53,7 @@ We are now in a position to extract the most important features that positively 
 ### Evaluation
 We build another model which uses a different strategy to extract feature importance, called a LASSO selector, in order to validate the results of the Ridge model above.
 #### LASSO selector
-We build a LASSO selector to select the 10 most important features (positive or negative) to verify that the ridge model fidings above are reasonable. We run the LASSO selector along with the Ridge model (with grid search for the alpha hyperparameter) as earlier. We find that the results from LASSO are very similar to the Ridge model, validating our earlier results. Details are in the linked Jupyter notebook.
+We build a LASSO selector to select the 10 most important features (positive or negative) to verify that the ridge model fidings above are reasonable. We run the LASSO selector along with the Ridge model (with grid search for the alpha hyperparameter) as earlier. We find that the results from LASSO are very similar to the Ridge model, validating our earlier results. Details are in the linked <a href="https://github.com/Vamana/Car-Values-Analysis/blob/main/ASubbaraman-CarValues.ipynb">Jupyter notebook</a>.
 
 ### Recommendations
 Based on the results of our Machine Learning model, we can now make some recommendations to car dealers. Some of these recommendations are probably expected from past experience, but we are also able provide some possibly new insights that we have uncovered.
